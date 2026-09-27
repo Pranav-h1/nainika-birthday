@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nainika-6th-birthday
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
+    envVars: []
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
